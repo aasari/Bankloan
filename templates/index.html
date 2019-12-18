@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Loan Application Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  .jumbotron {
+    background-color: #e0d5d5;
+    color: #050505;
+  }
+  </style>
+</head>
+<body>
+<div class="jumbotron text-center">
+  <h1>XYZ Bank</h1>
+  <p>Loan Application Form</p>
+<div>
+<form class = "form-inline" action="/result" method="POST">
+	<label for="Gender">Gender</label>
+	<select id="Gender" name="Gender" required="required">
+	<option value="0">Female</option>
+	<option value="1">Male</option>
+	</select>
+	<br>
+	<br>
+	<label for="Married">Married</label>
+	<select id="Married" name="Married" required="required">
+	<option value="0">NO</option>
+	<option value="1">YES</option>
+	</select>
+	<br>
+	<br>
+	<label for="Dependents">Dependents</label>
+	<select id="Dependents" name="Dependents" required="required">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3+</option>
+	</select>
+	<br>
+	<br>
+	<label for="Education">Education</label>
+	<select id="Education" name="Education" required="required">
+	<option value="0">Not Graduate</option>
+	<option value="1">Graduate</option>
+	</select>
+	<br>
+	<br>
+	<label for="Self_Employed">Self_Employed</label>
+	<select id="Self_Employed" name="Self_Employed" required="required">
+	<option value="0">NO</option>
+	<option value="1">YES</option>
+	</select>
+	<br>
+	<br>
+	<label for="ApplicantIncome">ApplicantIncome</label>
+	<select id="ApplicantIncome" name="ApplicantIncome" required="required">
+	<option value="0">0 to 5000</option>
+	<option value="1">5000 to 10000</option>
+	<option value="2">Above 10000</option>
+	</select>
+	<br>
+	<br>
+	<label for="CoapplicantIncome">Any CoapplicantIncome</label>
+	<select id="CoapplicantIncome" name="CoapplicantIncome" required="required">
+	<option value="0">NO</option>
+	<option value="1">YES</option>
+	</select>
+	<br>
+	<br>
+	<label for="LoanAmount">Expecting Loan Amount</label>
+	<input type="number" id="LoanAmount" name="LoanAmount" placeholder="Btw 0 to 500" required="required">
+	<br>
+	<br>
+	<label for="Loan_Amount_Term">Loan_Amount_Term </label>
+	<input type="text" id="Loan_Amount_Term" name="Loan_Amount_Term" placeholder="In Days" required="required">
+	<br>
+	<br>
+	<label for="Credit_History">Credit_History</label>
+	<select id="Credit_History" name="Credit_History" required="required">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	</select>
+	<br>
+	<br>
+	<label for="Property_Area">Property_Area</label>
+	<select id="Property_Area" name="Property_Area" required="required">
+	<option value="0">Urban</option>
+	<option value="1">Rural</option>
+	<option value="2">Semi Urban</option>
+	</select>
+	<br>
+	<br>
+	<div class="input-group-btn">
+	<input type="submit" class="btn btn-danger"value="Submit">
+	</div>
+</form>
+</div>
+</body>
+</html>
